@@ -1,4 +1,3 @@
-
 import PropTypes from 'prop-types';
 
 export const FeedbackOptions = ({ options, dispatch }) => {
@@ -19,7 +18,6 @@ export const FeedbackOptions = ({ options, dispatch }) => {
 };
 
 FeedbackOptions.propTypes = {
-  options: PropTypes.array.isRequired,
   dispatch: PropTypes.func.isRequired,
+  options: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
-  
